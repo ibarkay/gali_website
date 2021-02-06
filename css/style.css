@@ -52,6 +52,8 @@ body {
   align-items: center;
   position: sticky;
   top: 0;
+  overflow: hidden;
+  z-index: 10;
 }
 .navbar ul {
   list-style: none;
@@ -174,6 +176,7 @@ h2 {
 
 .card {
   display: flex;
+  text-align: center;
   margin-left: 2rem;
   justify-content: center;
   flex-direction: column;
@@ -212,7 +215,9 @@ h2 {
   border: 1px red solid; */
 
 }
-.card.gali{
+h4,h5 {
+  padding: 0.4rem 0;
+
 }
 .video-container video {
   border: 1.4px black solid;
@@ -229,6 +234,7 @@ h2 {
 }
 .gali-pic {
   background: url('/img/gali.webp') no-repeat center center/cover;
+  transform: scaleX(-1);
   width: 200px;
   height: 200px;
   border: 1.4px black solid;
