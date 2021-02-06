@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- TODO : build pop-up pages... -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/50cd97880a.js" crossorigin="anonymous"></script>
+  <title>GaliBDesin</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width : 768px)" href="css/mobile.css">
+</head>
+<body>
+  <div class="navbar">
+    <ul>
+      <li><a href="#" class="gali">GaliBDesign</a></li>
+      <li><a href="#projects-grid">My Work</a></li>
+      <li><a href="#" class="open-button" onclick="openForm()">Contact</a></li>
+    </ul>
+    </div>
+
+    <div class="main-container">
+      <div class="hero">
+        <div class="hero-container">
+          <div class="video-container">
+            <div class="box">
+              <div class="main-header"><h2>Showreel</h2></div>
+            </div>
+            <video width="560" height="315" controls>
+              <source src="/videos/Showreel_FinalCut.mp4" type="video/mp4">
+              
+              Your browser does not support HTML video.
+            </video>
+            <div><a href="#projects-grid"><i class="fas fa-angle-double-down"></i></a></div>
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/PnEeatxWwpk?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          </div>
+        </div>
+
+      </div>
+      <div class="grid-container">
+
+        <div class="projects-grid" id="projects-grid">
+          <div class="card" class="open-button" onclick="openForm1()">
+            <h4>Brain Event_ </h4>
+            <img src="/img/p1.webp" alt="">
+            <h5>Consept & Editing & Animation & Installation</h5>
+          </div>
+          <div class="card" class="open-button" onclick="openForm2()">
+            <h4>Halalit.T.V - Channel packaging</h4>
+            <img src="/img/p2.webp" alt="">
+            <h5>Concept & Art & Animation</h5>
+          </div>
+          <div class="card" class="open-button" onclick="openForm3()">
+            <h4>"Jordan River Village"</h4>
+            <img src="/img/p3.webp" alt="">
+            <h5>Motion & Animation & Print & Concept</h5>
+          </div>
+          <div class="card" class="open-button" onclick="openForm4()">
+            <h4>Plastic Utopia</h4>
+            <img src="/img/p4.webp" alt="">
+            <h5>Consept & Filming & Editing</h5>
+          </div>
+          
+      </div>
+
+      <!-- test Pop-up -->
+      <!-- <button class="open-button" onclick="openForm()">Open Form</button> -->
+
+      <div class="form-popup" id="myForm">
+        <div class="pop-containet">
+          <div class="gali-pic">
+            <div class="picy"></div>
+          </div>
+          <div class="text-area">
+            <h1>Contact</h1>
+            <p>Im a graphic designer & illustrator, Specializing in Motion design & animation.
+              I believe every design have a story and i see my self as a story teller.
+              Graduated from HIT -  Holon Institute of Technology 2019.</p>
+          </div>
+      
+      
+          
+        </div>
+        <button type="button" class="btn cancel" onclick="closeForm()"><i class="fas fa-times"></i></button>
+        </div>
+
+      <!-- project-page 1 -->
+      <div class="form-popup" id="myForm-p1">
+        <div class="pop-containet">
+          <!-- <div class="gali-pic"> -->
+            <div class="pictures-grid">
+              <img src="/img/p1_1.webp" alt="">
+              <img src="/img/p1_2.webp" alt="">
+              <img src="/img/p1_3.webp" alt="">
+            </div>
+          </div>
+          <div class="text-area">
+            <h1>Brain Event_<br>Video installation</h1>
+            <p>
+              Brain Event_ Video installation
+              A video installation that tails my personal story.
+              The installation included screening on 3 walls (3.0x1.80 meter each) in a dark room.
+              it simulated what happened inside my brain during an aneurism i had when i was 19.
+              The project was outstanding and received great recognition in the media.</p>
+          </div>
+      
+      
+          <button type="button" class="btn cancel" onclick="closeForm1()"><i class="fas fa-times"></i></button>
+          
+        </div>
+      <!-- project-page 2 -->
+      <div class="form-popup" id="myForm-p2">
+        <div class="pop-containet">
+          
+            <div class="pictures-grid">
+              <!-- <img src="/img/p1_1.webp" alt="">
+              <img src="/img/p1_2.webp" alt="">
+              <img src="/img/p1_3.webp" alt=""> -->
+            </div>
+          </div>
+          <div class="text-area">
+            <h1>Channel packaging - Halalit.T.V<br>Concept & Art & Animation</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempora nihil, necessitatibus a qui modi dolores quia magnam soluta labore quaerat recusandae illum excepturi. Impedit, illum quia. Molestiae hic eaque saepe illum quos facilis, in repellat. Nisi debitis quo omnis.</p>
+          </div>
+      
+      
+          <button type="button" class="btn cancel" onclick="closeForm2()"><i class="fas fa-times"></i></button>
+          
+        </div>
+        <!-- end pop-page -->
+      <!-- project-page 3 -->
+      <div class="form-popup" id="myForm-p3">
+        <div class="pop-containet">
+          
+            <div class="pictures-grid">
+              <!-- <img src="/img/p1_1.webp" alt="">
+              <img src="/img/p1_2.webp" alt="">
+              <img src="/img/p1_3.webp" alt=""> -->
+            </div>
+          </div>
+          <div class="text-area">
+            <h1>Bath tails - Animatic<br>Story & Illustration</h1>
+            <p>
+              An animatic for a short animation film.
+              What really happens after the shower ends? the secret life of the bath toys.
+              *Student project HIT</p>
+          </div>
+      
+      
+          <button type="button" class="btn cancel" onclick="closeForm3()"><i class="fas fa-times"></i></button>
+          
+        </div>
+        <!-- end pop-page -->
+      <!-- project-page 4 -->
+      <div class="form-popup" id="myForm-p4">
+        <div class="pop-containet">
+          
+            <div class="pictures-grid">
+              <!-- <img src="/img/p1_1.webp" alt="">
+              <img src="/img/p1_2.webp" alt="">
+              <img src="/img/p1_3.webp" alt=""> -->
+            </div>
+          </div>
+          <div class="text-area">
+            <h1>Channel packaging - Halalit.T.V<br>Concept & Art & Animation</h1>
+            <p></p>
+          </div>
+      
+      
+          <button type="button" class="btn cancel" onclick="closeForm4()"><i class="fas fa-times"></i></button>
+          
+        </div>
+        <!-- end pop-page -->
+        </div>
+      </div>
+
+
+      </div>
+    </div>
+</body>
+<script>
+  function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+  function openForm1() {
+  document.getElementById("myForm-p1").style.display = "block";
+}
+
+function closeForm1() {
+  document.getElementById("myForm-p1").style.display = "none";
+}
+  function openForm2() {
+  document.getElementById("myForm-p2").style.display = "block";
+}
+
+function closeForm2() {
+  document.getElementById("myForm-p2").style.display = "none";
+}
+  function openForm3() {
+  document.getElementById("myForm-p3").style.display = "block";
+}
+
+function closeForm3() {
+  document.getElementById("myForm-p3").style.display = "none";
+}
+  function openForm4() {
+  document.getElementById("myForm-p4").style.display = "block";
+}
+
+function closeForm4() {
+  document.getElementById("myForm-p4").style.display = "none";
+}
+</script>
+</html>
